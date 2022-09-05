@@ -15,8 +15,6 @@ public class BasicMovement extends OpMode {
     public DcMotor RIGHT_REAR;
     public DcMotor LEFT_REAR;
 
-/*Test override in RoboSapiens try again*/
-
     @Override
     public void init() {
 
