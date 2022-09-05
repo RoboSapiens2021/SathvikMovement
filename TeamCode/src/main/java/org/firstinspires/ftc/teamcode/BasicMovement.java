@@ -4,8 +4,6 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-/*Test Push again now!*/
-
 @TeleOp()
 
 public class BasicMovement extends OpMode {
@@ -17,7 +15,8 @@ public class BasicMovement extends OpMode {
     public DcMotor RIGHT_REAR;
     public DcMotor LEFT_REAR;
 
-/*Test override*/
+/*Test override in RoboSapiens*/
+
     @Override
     public void init() {
 
