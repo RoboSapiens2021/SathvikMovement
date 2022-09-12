@@ -9,6 +9,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 public class BasicMovement extends OpMode {
 
     double movementMultiplier=1;
+    double movementMultiplierTurn=2.2;
 
     public DcMotor LEFT_FRONT;
     public DcMotor RIGHT_FRONT;
@@ -35,14 +36,13 @@ public class BasicMovement extends OpMode {
    public void loop() {
     double horizontal = movementMultiplier * gamepad1.left_stick_x;
     double vertical = -movementMultiplier * gamepad1.left_stick_y;
-    double turn = -movementMultiplier * gamepad1.right_stick_x;
+    double turn = -movementMultiplierTurn * gamepad1.right_stick_x;
 
 
     LEFT_REAR.setPower(turn + horizontal - vertical);
     LEFT_FRONT.setPower(turn - horizontal - vertical);
     RIGHT_REAR.setPower(turn + horizontal + vertical);
     RIGHT_FRONT.setPower(turn - horizontal + vertical);
-
 
 
 }
